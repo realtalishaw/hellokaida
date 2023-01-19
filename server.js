@@ -27,6 +27,17 @@ app.get('/dashboard/team', (req, res) => {
     res.render('team', { title: 'Kaida | Team' });
 });
 
+app.get('/onboarding', (req, res) => {
+    res.render('onboarding-1', { title: 'Kaida | Onboarding' });
+});
+
+app.get('/onboarding-2', (req, res) => {
+    res.render('onboarding-2', { title: 'Kaida | Onboarding' });
+});
+
+app.get('/onboarding-3', (req, res) => {
+    res.render('onboarding-3', { title: 'Kaida | Onboarding' });
+});
 //error handling
 app.use(function (req, res, next) {
     res.status(404).render("404")
